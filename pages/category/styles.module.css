@@ -1,0 +1,22 @@
+.container {
+  width: 100%;
+  max-width: var(--max-width-1);
+  padding: var(--p1);
+  margin: auto;
+}
+
+.head {
+  height: 14.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: var(--clr-dark-2);
+  color: white;
+  margin-bottom: 4.5rem;
+}
+
+.title {
+  font-size: var(--fs-800);
+  letter-spacing: 0.089rem;
+}

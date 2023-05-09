@@ -1,0 +1,27 @@
+.list {
+  display: flex;
+  gap: 2.125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  /* margin-right: 6rem; */
+}
+
+.link {
+  transition: 0.3s color;
+  font-size: var(--fs-100);
+}
+
+.link:hover {
+  color: var(--clr-primary-1);
+}
+
+.active {
+  color: var(--clr-primary-1);
+}
+
+@media only screen and (max-width: 1040px) {
+  .list {
+    display: none;
+  }
+}

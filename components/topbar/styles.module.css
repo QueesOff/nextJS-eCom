@@ -1,0 +1,28 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: var(--zindex-topbar);
+}
+
+.bg {
+  width: 100%;
+  background-color: var(--clr-dark-2);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--max-width-1);
+  margin: auto;
+  color: white;
+  padding: 1rem var(--p1);
+  align-items: center;
+  background-color: inherit;
+}
+
+.desktop {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}

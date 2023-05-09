@@ -1,0 +1,71 @@
+.background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(0.2rem);
+}
+
+.sidebar {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 26rem;
+  background-color: var(--clr-light-2);
+  color: black;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  background-color: var(--clr-light-1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--p1);
+  box-shadow: var(--bs-1);
+  background-color: var(--clr-light-2);
+}
+
+.header h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.close {
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.list {
+  padding: var(--p1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: var(--p1) 0;
+}
+
+.empty svg {
+  font-size: 3rem;
+}
+
+.empty p {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}

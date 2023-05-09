@@ -1,0 +1,43 @@
+.quantity {
+  background-color: var(--clr-light-1);
+  padding: 0.7rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.num {
+  font-weight: bold;
+  min-width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta {
+  font-size: 1.5rem;
+  transition: 0.3s opacity;
+}
+
+.transparent {
+  background-color: transparent;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  max-width: auto !important;
+  padding: 0;
+}
+
+.transparent .decrease {
+  font-weight: 600;
+}
+
+.transparent .increase {
+  color: rgb(19, 204, 19);
+  font-weight: 600;
+}
+
+.increase:disabled {
+  color: rgb(172, 172, 172);
+}

@@ -1,0 +1,75 @@
+.card {
+  color: black;
+  box-shadow: var(--bs-2);
+  border-radius: 0.5rem;
+  position: relative;
+  min-height: 6.313rem;
+  max-height: 6.313rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2.25rem;
+  transition: 0.3s;
+  background-color: var(--clr-light-3);
+}
+
+.image {
+  width: 100%;
+  max-width: 8rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2rem;
+  margin: auto;
+  display: flex;
+}
+
+.title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: var(--fs-300);
+}
+
+.shop {
+  display: flex;
+  align-items: center;
+  margin-left: 0.62rem;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+  font-size: var(--fs-100);
+  font-weight: 600;
+  color: var(--clr-light-4);
+  transition: 0.3s;
+}
+
+.shop svg {
+  font-size: 1.1rem;
+  color: var(--clr-primary-1);
+  transition: 0.3s;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .card:hover {
+    box-shadow: var(--bs-3);
+  }
+
+  .card:hover .shop {
+    color: var(--clr-primary-1);
+  }
+
+  .card:hover .shop svg {
+    transform: translateX(5px);
+  }
+}
+
+@media only screen and (min-width: 1040px) {
+  .image {
+    max-width: 10rem;
+    top: -3rem;
+  }
+}
